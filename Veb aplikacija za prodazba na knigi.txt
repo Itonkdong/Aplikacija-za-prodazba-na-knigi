@@ -1,0 +1,16 @@
+Veb aplikacija za prodazba na knigi
+
+Stranici:
+Pocetna Stranica {
+	Header (vo edno i navigacija [moze stanica ili dinamicna])
+Hero del ()
+Del so nekolku preporacani knigi
+Footer
+
+
+}
+Knigi (Stranica za prebaruvanje na knigi)
+{
+	header
+	
+}

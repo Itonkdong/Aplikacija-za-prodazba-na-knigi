@@ -1,0 +1,42 @@
+-font sizes: rem
+stavi go font sizot na html elementot na 62.5% za da bidi 1rem = 10px.
+Potoa ako sakas nesto da stavis font-size, pr font-size od 21px -> 2.1rem bidejki 2.1*10 = 21px
+
+-width: % i max-width (ili vw- no treba da si vnimatelen, moze da snastanat problemi)
+
+
+-ako treba da se stavi max-width na paragrap koristi ch - pr 20ch == 20bukvi (odprilika). Najpreporacana sirocina za tekst e od 45 do 75 karakteri i toa lesno moze da se postigni so ch
+
+-height: postavi min-height namesto height (treba da se postavuva samo koga NAVISTINA E POTREBNO) : % ren ili vh(se pojavuvaaat problemi so vh na mobile devices, pr pojauvanje na tastaturata na ekranot)
+
+-padding i margin: em ili rem
+
+-media queries:em
+
+-borders, shadows, gaps (small things
+): px
+
+
+
+Tips:
+Na site tekst elementi moze da se stavi margin-top od 1 rem i taka ke imame konzistentont niz celata web strana. Ili pak moze da se stavi margin-top od 1em, pa na toj nacin h1 ke ima pogolema margina od h2 bidejki ima pogolem default font-size
+
+
+Z
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+

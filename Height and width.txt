@@ -1,0 +1,6 @@
+Height and width
+
+Default na block level e width:auto. Toa znaci deka block levle elementoto ke go zafaati celata linija na koja sto se naoga i avtomatski ke se menuva so namaluvanje na sirinata na view-port. 
+So width:100%, block level elementoto ke ima width od 100%, pa ako na toj element dodades dopolnitelna margina, ke se pojavi horizontalno skrolanje (bad thing)
+
+

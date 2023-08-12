@@ -1,0 +1,114 @@
+Cesti greski:
+
+-postavuanje na block element width 100% ili hight fit-content - toa e basicly default odnesuvanje na block-level elementi
+
+-ne koristi sekade flex (like on the body, wtf)
+
+-koristi reusabble klases (onamu kade sto mozis)
+
+-vnimavaj so position absolute, koristi transform: translate()- podobro e
+
+-negativni margini, vnimavaj i koristi sto e mozno pomalce
+
+
+
+
+
+
+Tips:
+Na flex-box default e flex-shrik: 1, pa ako stavis flex-grow: 100% ke dobies pravilno rasporedeni koloni (nezavisno od nivniot broj) (slicno so flex: 1 ili  flex-basis: 0; flex-grow: 1)
+
+-Koristi klasi kako bg-accent, shadow, ect...
+
+-Postavi poveke font-relateed styles na body-to (color, font-size)
+
+-Na *, *::before i *::after postavi box-sizing:border-box
+
+-Gledaj sto e mozno pomalce koristi desended selectors ( , >, + i tn), poveke fokusiraj se na single-class selektori (selektiraj so klasi), bidejki taka ne ja zgolemuvas specificnosta na selektorite. Koristenje na malku desended selektori e OK
+
+-Razdeli gi klasite za layout i stylying-content
+
+-Skori site elemeti vi hmtl imaat default hight auto - da zazemat onolku porstor kolku sto im e potrebno
+
+white-space: no wrpa (ako ne sakas tekstot da se wrpanuva (da odi vo nova llinija) )
+
+
+
+
+
+
+
+
+
+
+
+#Nasledeni svojstva:
+	color
+
+button, input, textarea, select - ne nasleduvaat font-family (font), zatoa ->
+
+button, input, textarea, select {
+	font: inherit
+}
+
+*, *::before, *::after 
+{
+	box-sizing:border-box
+}
+
+
+#CSS Variables
+
+//Get CSS variables with JS
+window.getComputedStyle(document.documentElement).getPropertyValue('--background-color')
+
+//Set CSS variables with JS
+
+document.documentElement.style.setProperty('--background-clr', 'red');
+
+
+
+
+
+
+
+	
+
+
+
+Koj box-sizing da se korsiti (box-sizing) <CHECKED>
+
+Koja e razlikata pomegu auto, fit-content i 100% <CHECKED>
+
+Sto e fit-conent max-content min-content, min-hight, max-height <CHECKED>
+
+Grid <CHECKED>
+
+Ness so hight bese i so aspect-ratio (ama ne znam koe vidoe bese tocno, mislam od ona crvenotot pozadina)
+
+Sto e transforom propertito
+
+main (semanticki element, glavniot del od web stranata, samo eden main element po web strana)
+
+place-items (shot hand za align-items justify-item) <CHECKED>
+
+isolation (STAVI GO NA PARENTOTO AKO TI TRBEA Z-INDEX:-1) <CHECKED>
+
+position: sticky (se zalepuva na pocetokot od parentot i se odlepuva koga parentoto poveke ne e vo view-port) <CHECKED>
+
+overflow
+
+Responsive Web Design
+
+CSS variables  (lenso)<CHECKED>
+
+
+
+
+
+
+
+
+
+
+

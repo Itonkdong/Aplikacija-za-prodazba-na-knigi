@@ -1,0 +1,20 @@
+flex-grow : od ostanatoto prazno mesto vo flex containerot, se deli vo proporcii na flex grow value-to
+
+flex-basis: od kade da pocni da dodatava. Ako flex-item ima odredena zadadena sirina, flex grow slobodnoto mesto ke go podeli vo soodnosost od flex-grow i ke go dodate na postoeckata sirina. No so flex-basis: 0, nie mu velime na flex-container-ot da smeta deka dadeniot element ima sirinan od 0 i na taa da dodava od flex-grow vrednostite
+
+flex: flex-grow flex-shrinl flex-basis
+
+Default vrednosti na flex-grow flex-shrinl flex-basis se:
+			0 1 auto
+
+Ako stavis flex: 1 === na flex: 1 0 0
+
+flex-basis: auto === width na elementot
+flex-basis (ako e postaven), celosno go ignorira width na elementot
+
+Margini vo flexbox: Ostanato mesto vo flex-containerot, ako na nekoj element se stavi margina-left: auto, ke go raspredeli vo toj del
+
+
+
+
+
