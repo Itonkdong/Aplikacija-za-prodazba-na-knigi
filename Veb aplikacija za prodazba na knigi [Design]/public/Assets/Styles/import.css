@@ -1,0 +1,11 @@
+@import "./global.css";
+
+@import "./header.css";
+@import "./navbar.css";
+@import "./hero-section.css";
+@import "./landing-page.css";
+@import "./popular-books.css";
+@import "./news-letter.css";
+@import "./footer.css";
+
+@import "./color-themes.css";

@@ -1,0 +1,30 @@
+.footer
+{
+    min-height: 40vh;
+    background-color: var(--accent-1);
+    display: grid;
+    grid-template-rows: 1fr 20%;
+}
+
+.legal-info
+{
+    background-color: #3d5870;
+}
+
+.footer-gird-wrapper
+{
+    display: grid;
+    place-items: center;
+}
+
+.footer-grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 90%;
+}
+
+.footer-title
+{
+    font-size: 1.7rem;
+}

@@ -1,0 +1,194 @@
+/*Font Imports*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/*Your CSS Variables*/
+:root{
+    --root-font: 62.5%;
+    --ff-main: Poppins;
+
+    --br-sml: 10px;
+    --br-big: 20px;
+
+    --text: #060a08;
+    --background: #779885;
+    --background-2:#ddf3e7;
+    --background-3: #536c5c; ;
+    --primary: #2e5641;
+    --secondary: #c1cfdc;
+    --accent-1: #4b6b86;
+    --accent-2: #4176a4;
+
+    /*--text: #0c1d14;
+    --background: #e5f1e4;
+    --primary: #2e5641;
+    --secondary: #c1cfdc;
+    --accent: #4176a4;*/
+
+
+    /*--text: hsl(148, 41%, 8%);
+--background: hsl(115, 25%, 81%);
+--primary: hsl(148, 30%, 26%);
+--secondary: hsl(209, 36%, 74%);
+--accent: hsl(208, 43%, 45%);*/
+
+}
+
+
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd, ul, ol {
+    margin: 0;
+}
+
+ul, ol
+{
+    padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+
+html
+{
+    font-size: var(--root-font);
+    font-family: var(--ff-main), sans-serif;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    //background-color: var(--background);
+    line-height: 1.5;
+    padding: 0;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+.shadow {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.shadow2{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+/* Styling for the title tooltip */
+.custom-tooltip {
+    position: relative;
+}
+
+.custom-tooltip::after {
+    content: attr(data-title);
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s;
+    font-size: 1.3rem;
+}
+
+.custom-tooltip:hover::after {
+    opacity: 80%;
+}
+
+.hover-elevate:hover
+{
+    transform: translateY(-3px);
+}
+
+.btn-default
+{
+    border: none;
+    font-size: 1.5rem;
+    padding: 1em 1.1em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.btn-default:hover
+{
+    transform: translateY(-3px);
+    border-radius: 15px;
+}
+
+.btn-default:active
+{
+    transform: translateY(4px);
+}
+
+.sml-btn
+{
+    font-size: 1.2rem;
+    padding: 0.7em 1.2em;
+}
+
+
+
