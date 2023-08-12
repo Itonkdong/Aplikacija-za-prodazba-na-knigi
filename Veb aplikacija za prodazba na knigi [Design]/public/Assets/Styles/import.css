@@ -1,5 +1,7 @@
 @import "./global.css";
 
+/*HomePage*/
+
 @import "./header.css";
 @import "./navbar.css";
 @import "./hero-section.css";
@@ -7,5 +9,12 @@
 @import "./popular-books.css";
 @import "./news-letter.css";
 @import "./footer.css";
+
+
+/*Login Registration*/
+@import "./login-registration.css";
+
+
+
 
 @import "./color-themes.css";

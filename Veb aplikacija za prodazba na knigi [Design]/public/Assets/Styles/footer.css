@@ -4,6 +4,7 @@
     background-color: var(--accent-1);
     display: grid;
     grid-template-rows: 1fr 20%;
+    border-radius: 5px 5px 0 0 ;
 }
 
 .legal-info
@@ -15,16 +16,39 @@
 {
     display: grid;
     place-items: center;
+
 }
 
 .footer-grid
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
     width: 90%;
+    color: white;
 }
 
 .footer-title
 {
-    font-size: 1.7rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+.footer-link
+{
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.legal-info
+{
+    font-size: 1.5rem;
+    display: grid;
+    place-items: center;
+}
+.legal-info p
+{
+    opacity: 50%;
 }
