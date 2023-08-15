@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop</title>
+    <link rel="stylesheet" href="Assets/Styles/import.css">
+</head>
+<body>
+<div class="page-wrapper shop-page-wrapper">
+    <header class="header">
+        <div class="header-item header-logo">
+            <img onclick="window.location.href='index.html'" class="header-logo-img" src="Assets/Images/client/logo-placeholder2.png" alt="logo">
+        </div>
+        <div class="header-item header-searchbar">
+            <input type="text" placeholder="Search available books">
+            <button class="btn-default secondary-clr">Search</button>
+        </div>
+        <div class="header-item header-options">
+            <div class="header-option-item contact custom-tooltip" data-title="Contact">&nbsp;</div>
+            <div class="header-option-item cart custom-tooltip" data-title="Cart"></div>
+            <div class="header-option-item profile custom-tooltip" data-title="Profile"></div>
+        </div>
+    </header>
+    <nav class="nav-bar shadow2">
+        <div class="nav-link">Books</div>
+        <div class="nav-link">New</div>
+        <div class="nav-link accent">Shop Now</div>
+        <div class="nav-link">Best Sellers</div>
+        <div class="nav-link">On Discount</div>
+    </nav>
+    <div class="shop-books-wrapper">
+        <div class="shop-books-grid">
+            <div class="shop-books-header">
+                <div class="shop-books-header-full-path shop-books-header-element">
+                    <div class="shop-books-header-path">
+                        Home
+                    </div>
+                    <div>
+                        >
+                    </div>
+                    <div class="shop-books-header-path">
+                        Books
+                    </div>
+
+                </div>
+                <div class="shop-books-header-title shop-books-header-element">
+                    Books
+                </div>
+                <div class="shop-books-header-info shop-books-header-element">
+                    <div class="shop-books-header-info-showing-results">
+                        Showing 1-48 out of 74 results
+                    </div>
+                    <div class="shop-books-header-info-pages">
+                        View 2 3 <span class="shop-books-current-page">4</span>
+                    </div>
+                </div>
+            </div>
+            <div class="shop-books-nav">
+                <div class="shop-books-nav-sort-wrapper">
+                    <div class="shop-books-nav-sort">
+                        <h3 class="shop-books-nav-title">Sort</h3>
+                        <div class="custom-select">
+                            <div class="select-trigger">
+                                <span class="custom-placeholder">Select an option</span>
+                                <span class="arrow">&#9660;</span>
+                            </div>
+                            <div class="options">
+                                <div class="option">What's new</div>
+                                <div class="option">Alphabetically</div>
+                                <div class="option">Price: Cheapest First</div>
+                                <div class="option">Price: Most Expensive First</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-books-nav-filter-wrapper">
+                    <div class="shop-books-nav-filter">
+                        <h3 class="shop-books-nav-title">Filter</h3>
+                        <div class="shop-books-nav-filter-type">
+                            <h4 class="shop-books-nav-filter-type-title">Genre</h4>
+                            <div class="custom-select">
+                                <div class="select-trigger">
+                                    <span class="custom-placeholder">Select an option</span>
+                                    <span class="arrow">&#9660;</span>
+                                </div>
+                                <div class="options">
+                                    <div class="option">All</div>
+                                    <div class="option">Poetry</div>
+                                    <div class="option">Classic</div>
+                                    <div class="option">Drama</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop-books-nav-filter-type">
+                            <h4 class="shop-books-nav-filter-type-title">Year</h4>
+                            <div class="custom-select">
+                                <div class="select-trigger">
+                                    <span class="custom-placeholder">Select an option</span>
+                                    <span class="arrow">&#9660;</span>
+                                </div>
+                                <div class="options">
+                                    <div class="option">All</div>
+                                    <div class="option">Before 1800s</div>
+                                    <div class="option">1800s</div>
+                                    <div class="option">1900s</div>
+                                    <div class="option">2000s</div>
+                                    <div class="option">2010s</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop-books-nav-filter-type">
+                            <h4 class="shop-books-nav-filter-type-title">Author</h4>
+                            <input type="text" placeholder="Author's name" class="shop-books-nav-filter-type-authors-name">
+                        </div>
+                        <div class="shop-books-nav-filter-type">
+                            <h4 class="shop-books-nav-filter-type-title">Price Range</h4>
+                            <div class="custom-select">
+                                <div class="select-trigger">
+                                    <span class="custom-placeholder">Select an option</span>
+                                    <span class="arrow">&#9660;</span>
+                                </div>
+                                <div class="options">
+                                    <div class="option">All</div>
+                                    <div class="option">Above $30</div>
+                                    <div class="option">Under $30</div>
+                                    <div class="option">Under $20</div>
+                                    <div class="option">Under $10</div>
+                                    <div class="option">Under $5</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <main class="shop-books-main">
+                <div class="shop-books-main-grid">
+                    <div class="book-card shadow2 adjust-card-for-shop">
+                        <div class="book-card-img content">
+                            <div class="book-card-tags">
+                                <div class="book-card-tag tag-new">New</div>
+                                <div class="book-card-tag tag-sale">Sale</div>
+                            </div>
+
+                            <img class="shadow2" src="./Assets/Images/book-images/book-covers/cover-1-tmp.jpg" alt="Book Cover">
+                        </div>
+                        <div class="book-card-info content">
+                            <div class="book-card-author">
+                                <div class="book-by-animate"> By: Franz Kafka</div>
+                            </div>
+                            <div class="book-card-genre">Classic</div>
+
+                        </div>
+                        <div class="book-card-title content">Letter to Milena</div>
+                        <div class="book-card-prices content">
+                            <div class="sale-percentage accent-clr-2">-30%</div>
+                            <div class="book-card-old-price">$7.00</div>
+                            <div class="book-card-regular-price">$3.00</div>
+                        </div>
+
+                        <div class="book-card-buttons">
+                            <button class="btn-default sml-btn book-card-button shadow2 accent-clr">Add to Cart</button>
+                            <!--                    <button class="btn-default sml-btn popular-book-button shadow2 accent-clr-2">View Details</button>-->
+                        </div>
+
+                    </div>
+
+                    <div class="book-card shadow2 adjust-card-for-shop">
+
+                        <div class="book-card-img content">
+                            <div class="book-card-tags">
+                                <div class="book-card-tag tag-new">New</div>
+                                <!--<div class="popular-book-tag tag-sale">Sale</div>-->
+                            </div>
+
+                            <img class="shadow2" src="./Assets/Images/book-images/book-covers/cover-2-tmp.jpg" alt="Book Cover">
+                        </div>
+                        <div class="book-card-info content">
+                            <div class="book-card-author">
+                                <div class="book-by-animate">By: Mirko Petrovski</div>
+                            </div>
+                            <div class="book-card-genre">Classic</div>
+
+                        </div>
+                        <div class="book-card-title content">Hands of the Gods</div>
+                        <div class="book-card-prices content">
+                            <!--<div class="sale-percentage">-30%</div>
+                            <div class="popular-book-old-price">$7.00</div>-->
+                            <div class="book-card-regular-price">$12.00</div>
+                        </div>
+
+                        <div class="book-card-buttons">
+                            <button class="btn-default sml-btn book-card-button shadow2 accent-clr">Add to Cart</button>
+                            <!--                    <button class="btn-default sml-btn popular-book-button shadow2 accent-clr-2">View Details</button>-->
+                        </div>
+
+                    </div>
+
+                    <div class="book-card shadow2 adjust-card-for-shop">
+                        <div class="book-card-img content">
+                            <div class="book-card-tags">
+                                <!--<div class="popular-book-tag tag-new">New</div>
+                                <div class="popular-book-tag tag-sale">Sale</div>-->
+                            </div>
+
+                            <img class="shadow2" src="./Assets/Images/book-images/book-covers/cover-3-tmp.jpg" alt="Book Cover">
+                        </div>
+                        <div class="book-card-info content">
+                            <div class="book-card-author">
+                                <div class="book-by-animate"> By: Andrea Miroglu</div>
+                            </div>
+                            <div class="book-card-genre">Poetry</div>
+
+                        </div>
+                        <div class="book-card-title content">Come here Devil baby, i will eat uoi</div>
+                        <div class="book-card-prices content">
+                            <!--<div class="sale-percentage">-30%</div>
+                            <div class="popular-book-old-price">$7.00</div>-->
+                            <div class="book-card-regular-price">$23.00</div>
+                        </div>
+
+                        <div class="book-card-buttons">
+                            <button class="btn-default sml-btn book-card-button shadow2 accent-clr">Add to Cart</button>
+                            <!--                    <button class="btn-default sml-btn popular-book-button shadow2 accent-clr-2">View Details</button>-->
+                        </div>
+
+                    </div>
+
+                    <div class="book-card shadow2 adjust-card-for-shop">
+                        <div class="book-card-img content">
+                            <div class="book-card-tags">
+                                <!--<div class="popular-book-tag tag-new">New</div>-->
+                                <div class="book-card-tag tag-sale">Sale</div>
+                            </div>
+
+                            <img class="shadow2" src="./Assets/Images/book-images/book-covers/cover-4-tmp.jpg" alt="Book Cover">
+                        </div>
+                        <div class="book-card-info content">
+                            <div class="book-card-author">
+                                <div class="book-by-animate"> By: Dante Aligieri</div>
+                            </div>
+                            <div class="book-card-genre">Classic</div>
+
+                        </div>
+                        <div class="book-card-title content">Inferno</div>
+                        <div class="book-card-prices content">
+                            <div class="sale-percentage">-7%</div>
+                            <div class="book-card-old-price">$7.00</div>
+                            <div class="book-card-regular-price">$5.00</div>
+                        </div>
+
+                        <div class="book-card-buttons">
+                            <button class="btn-default sml-btn book-card-button shadow2 accent-clr">Add to Cart</button>
+                            <!--                    <button class="btn-default sml-btn popular-book-button shadow2 accent-clr-2">View Details</button>-->
+                        </div>
+
+                    </div>
+
+                    <div class="book-card shadow2 adjust-card-for-shop">
+                        <div class="book-card-img content">
+                            <div class="book-card-tags">
+                                <div class="book-card-tag tag-new">New</div>
+                                <div class="book-card-tag tag-sale">Sale</div>
+                            </div>
+
+                            <img class="shadow2" src="./Assets/Images/book-images/book-covers/cover-1-tmp.jpg" alt="Book Cover">
+                        </div>
+                        <div class="book-card-info content">
+                            <div class="book-card-author">
+                                <div class="book-by-animate"> By: Franz Kafka</div>
+                            </div>
+                            <div class="book-card-genre">Classic</div>
+
+                        </div>
+                        <div class="book-card-title content">Letter to Milena</div>
+                        <div class="book-card-prices content">
+                            <div class="sale-percentage accent-clr-2">-30%</div>
+                            <div class="book-card-old-price">$7.00</div>
+                            <div class="book-card-regular-price">$3.00</div>
+                        </div>
+
+                        <div class="book-card-buttons">
+                            <button class="btn-default sml-btn book-card-button shadow2 accent-clr">Add to Cart</button>
+                            <!--                    <button class="btn-default sml-btn popular-book-button shadow2 accent-clr-2">View Details</button>-->
+                        </div>
+
+                    </div>
+
+                    <div class="book-card shadow2 adjust-card-for-shop">
+
+                        <div class="book-card-img content">
+                            <div class="book-card-tags">
+                                <div class="book-card-tag tag-new">New</div>
+                                <!--<div class="popular-book-tag tag-sale">Sale</div>-->
+                            </div>
+
+                            <img class="shadow2" src="./Assets/Images/book-images/book-covers/cover-2-tmp.jpg" alt="Book Cover">
+                        </div>
+                        <div class="book-card-info content">
+                            <div class="book-card-author">
+                                <div class="book-by-animate">By: Mirko Petrovski</div>
+                            </div>
+                            <div class="book-card-genre">Classic</div>
+
+                        </div>
+                        <div class="book-card-title content">Hands of the Gods</div>
+                        <div class="book-card-prices content">
+                            <!--<div class="sale-percentage">-30%</div>
+                            <div class="popular-book-old-price">$7.00</div>-->
+                            <div class="book-card-regular-price">$12.00</div>
+                        </div>
+
+                        <div class="book-card-buttons">
+                            <button class="btn-default sml-btn book-card-button shadow2 accent-clr">Add to Cart</button>
+                            <!--                    <button class="btn-default sml-btn popular-book-button shadow2 accent-clr-2">View Details</button>-->
+                        </div>
+
+                    </div>
+
+                    <div class="book-card shadow2 adjust-card-for-shop">
+                        <div class="book-card-img content">
+                            <div class="book-card-tags">
+                                <!--<div class="popular-book-tag tag-new">New</div>
+                                <div class="popular-book-tag tag-sale">Sale</div>-->
+                            </div>
+
+                            <img class="shadow2" src="./Assets/Images/book-images/book-covers/cover-3-tmp.jpg" alt="Book Cover">
+                        </div>
+                        <div class="book-card-info content">
+                            <div class="book-card-author">
+                                <div class="book-by-animate"> By: Andrea Miroglu</div>
+                            </div>
+                            <div class="book-card-genre">Poetry</div>
+
+                        </div>
+                        <div class="book-card-title content">Come here Devil baby, i will eat uoi</div>
+                        <div class="book-card-prices content">
+                            <!--<div class="sale-percentage">-30%</div>
+                            <div class="popular-book-old-price">$7.00</div>-->
+                            <div class="book-card-regular-price">$23.00</div>
+                        </div>
+
+                        <div class="book-card-buttons">
+                            <button class="btn-default sml-btn book-card-button shadow2 accent-clr">Add to Cart</button>
+                            <!--                    <button class="btn-default sml-btn popular-book-button shadow2 accent-clr-2">View Details</button>-->
+                        </div>
+
+                    </div>
+
+                    <div class="book-card shadow2 adjust-card-for-shop">
+                        <div class="book-card-img content">
+                            <div class="book-card-tags">
+                                <!--<div class="popular-book-tag tag-new">New</div>-->
+                                <div class="book-card-tag tag-sale">Sale</div>
+                            </div>
+
+                            <img class="shadow2" src="./Assets/Images/book-images/book-covers/cover-4-tmp.jpg" alt="Book Cover">
+                        </div>
+                        <div class="book-card-info content">
+                            <div class="book-card-author">
+                                <div class="book-by-animate"> By: Dante Aligieri</div>
+                            </div>
+                            <div class="book-card-genre">Classic</div>
+
+                        </div>
+                        <div class="book-card-title content">Inferno</div>
+                        <div class="book-card-prices content">
+                            <div class="sale-percentage">-7%</div>
+                            <div class="book-card-old-price">$7.00</div>
+                            <div class="book-card-regular-price">$5.00</div>
+                        </div>
+
+                        <div class="book-card-buttons">
+                            <button class="btn-default sml-btn book-card-button shadow2 accent-clr">Add to Cart</button>
+                            <!--                    <button class="btn-default sml-btn popular-book-button shadow2 accent-clr-2">View Details</button>-->
+                        </div>
+
+                    </div>
+
+                    <div class="book-card shadow2 adjust-card-for-shop">
+                        <div class="book-card-img content">
+                            <div class="book-card-tags">
+                                <div class="book-card-tag tag-new">New</div>
+                                <div class="book-card-tag tag-sale">Sale</div>
+                            </div>
+
+                            <img class="shadow2" src="./Assets/Images/book-images/book-covers/cover-1-tmp.jpg" alt="Book Cover">
+                        </div>
+                        <div class="book-card-info content">
+                            <div class="book-card-author">
+                                <div class="book-by-animate"> By: Franz Kafka</div>
+                            </div>
+                            <div class="book-card-genre">Classic</div>
+
+                        </div>
+                        <div class="book-card-title content">Letter to Milena</div>
+                        <div class="book-card-prices content">
+                            <div class="sale-percentage accent-clr-2">-30%</div>
+                            <div class="book-card-old-price">$7.00</div>
+                            <div class="book-card-regular-price">$3.00</div>
+                        </div>
+
+                        <div class="book-card-buttons">
+                            <button class="btn-default sml-btn book-card-button shadow2 accent-clr">Add to Cart</button>
+                            <!--                    <button class="btn-default sml-btn popular-book-button shadow2 accent-clr-2">View Details</button>-->
+                        </div>
+
+                    </div>
+
+                    <div class="book-card shadow2 adjust-card-for-shop">
+
+                        <div class="book-card-img content">
+                            <div class="book-card-tags">
+                                <div class="book-card-tag tag-new">New</div>
+                                <!--<div class="popular-book-tag tag-sale">Sale</div>-->
+                            </div>
+
+                            <img class="shadow2" src="./Assets/Images/book-images/book-covers/cover-2-tmp.jpg" alt="Book Cover">
+                        </div>
+                        <div class="book-card-info content">
+                            <div class="book-card-author">
+                                <div class="book-by-animate">By: Mirko Petrovski</div>
+                            </div>
+                            <div class="book-card-genre">Classic</div>
+
+                        </div>
+                        <div class="book-card-title content">Hands of the Gods</div>
+                        <div class="book-card-prices content">
+                            <!--<div class="sale-percentage">-30%</div>
+                            <div class="popular-book-old-price">$7.00</div>-->
+                            <div class="book-card-regular-price">$12.00</div>
+                        </div>
+
+                        <div class="book-card-buttons">
+                            <button class="btn-default sml-btn book-card-button shadow2 accent-clr">Add to Cart</button>
+                            <!--                    <button class="btn-default sml-btn popular-book-button shadow2 accent-clr-2">View Details</button>-->
+                        </div>
+
+                    </div>
+
+                    <div class="book-card shadow2 adjust-card-for-shop">
+                        <div class="book-card-img content">
+                            <div class="book-card-tags">
+                                <!--<div class="popular-book-tag tag-new">New</div>
+                                <div class="popular-book-tag tag-sale">Sale</div>-->
+                            </div>
+
+                            <img class="shadow2" src="./Assets/Images/book-images/book-covers/cover-3-tmp.jpg" alt="Book Cover">
+                        </div>
+                        <div class="book-card-info content">
+                            <div class="book-card-author">
+                                <div class="book-by-animate"> By: Andrea Miroglu</div>
+                            </div>
+                            <div class="book-card-genre">Poetry</div>
+
+                        </div>
+                        <div class="book-card-title content">Come here Devil baby, i will eat uoi</div>
+                        <div class="book-card-prices content">
+                            <!--<div class="sale-percentage">-30%</div>
+                            <div class="popular-book-old-price">$7.00</div>-->
+                            <div class="book-card-regular-price">$23.00</div>
+                        </div>
+
+                        <div class="book-card-buttons">
+                            <button class="btn-default sml-btn book-card-button shadow2 accent-clr">Add to Cart</button>
+                            <!--                    <button class="btn-default sml-btn popular-book-button shadow2 accent-clr-2">View Details</button>-->
+                        </div>
+
+                    </div>
+
+                    <div class="book-card shadow2 adjust-card-for-shop">
+                        <div class="book-card-img content">
+                            <div class="book-card-tags">
+                                <!--<div class="popular-book-tag tag-new">New</div>-->
+                                <div class="book-card-tag tag-sale">Sale</div>
+                            </div>
+
+                            <img class="shadow2" src="./Assets/Images/book-images/book-covers/cover-4-tmp.jpg" alt="Book Cover">
+                        </div>
+                        <div class="book-card-info content">
+                            <div class="book-card-author">
+                                <div class="book-by-animate"> By: Dante Aligieri</div>
+                            </div>
+                            <div class="book-card-genre">Classic</div>
+
+                        </div>
+                        <div class="book-card-title content">Inferno</div>
+                        <div class="book-card-prices content">
+                            <div class="sale-percentage">-7%</div>
+                            <div class="book-card-old-price">$7.00</div>
+                            <div class="book-card-regular-price">$5.00</div>
+                        </div>
+
+                        <div class="book-card-buttons">
+                            <button class="btn-default sml-btn book-card-button shadow2 accent-clr">Add to Cart</button>
+                            <!--                    <button class="btn-default sml-btn popular-book-button shadow2 accent-clr-2">View Details</button>-->
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="shop-books-main-nav">
+                    <div class="shop-books-main-nav-container">
+                        <div class="shop-books-main-nav-item main-nav-arrow right-arrow">
+                            <span class="main-nav-arrow-animate"> &#8592;</span>
+                        </div>
+                        <div class="shop-books-main-nav-item shop-books-main-nav-active-page" >1</div>
+                        <div class="shop-books-main-nav-item">2</div>
+                        <div class="shop-books-main-nav-item">3</div>
+                        <div class="shop-books-main-nav-item">4</div>
+                        <div class="shop-books-main-nav-item">...</div>
+                        <div class="shop-books-main-nav-item">16</div>
+                        <div class="shop-books-main-nav-item main-nav-arrow left-arrow">
+                           <span class="main-nav-arrow-animate"> &#8594;</span>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    function customDropDown()
+    {
+        const selectTriggers = document.querySelectorAll(".select-trigger");
+        const optionsContainers = document.querySelectorAll(".options");
+        const options = document.querySelectorAll(".option");
+
+        const arrows = document.querySelectorAll('.arrow');
+
+        selectTriggers.forEach((selectTrigger, index)=>{
+            selectTrigger.addEventListener("click", function () {
+
+                if(optionsContainers[index].classList.contains('show-options'))
+                {
+                    optionsContainers[index].classList.remove("show-options");
+                    arrows[index].classList.remove('arrow-animate');
+
+                }
+                else
+                {
+                    arrows[index].classList.add('arrow-animate');
+                    optionsContainers[index].classList.add("show-options");
+
+                }
+            });
+        })
+
+
+
+        options.forEach((option) => {
+            option.addEventListener("click", function () {
+                const selectedValue = option.textContent;
+
+                optionsContainers.forEach((optionsContainer, index)=>{
+                    if(optionsContainer.classList.contains('show-options'))
+                    {
+                        selectTriggers[index].textContent = selectedValue;
+                        optionsContainer.classList.remove("show-options");
+                        arrows[index].classList.remove('arrow-animate');
+                    }
+                })
+
+
+
+            });
+        });
+
+        document.addEventListener("click", function (event) {
+
+            selectTriggers.forEach((selectTrigger,index)=>{
+                if (!selectTrigger.contains(event.target)) {
+                    optionsContainers[index].classList.remove("show-options");
+                    arrows[index].classList.remove('arrow-animate');
+
+                }
+            })
+
+        });
+    }
+    document.addEventListener('DOMContentLoaded', customDropDown);
+</script>
+
+</body>
+</html>

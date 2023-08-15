@@ -1,0 +1,326 @@
+.shop-page-wrapper
+{
+    height: 230vh;
+}
+
+.shop-books-wrapper
+{
+    background-color: var(--background-2);
+    margin-top: 3rem;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+    //background-color: red;
+
+}
+
+.shop-books-grid
+{
+    display: grid;
+    height: 100%;
+    width: 93%;
+    //background-color: yellow;
+    grid-template-columns: 18% 1fr;
+    grid-template-rows: 200px 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+
+/*Header*/
+.shop-books-header
+{
+   // background-color: #fff;
+    grid-column: 2/-1;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    gap: 0.5rem;
+    padding: 0.8rem;
+}
+
+.shop-books-header-element
+{
+   // background-color: red;
+}
+
+
+.shop-books-header-full-path
+{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.shop-books-header-title
+{
+    display: flex;
+    align-items: center;
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+
+.shop-books-header-info
+{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+
+}
+
+.shop-books-header-info-showing-results
+{
+    margin-right: auto;
+    text-transform: uppercase;
+
+    font-size: 1.4rem;
+}
+
+.shop-books-header-info-pages
+{
+    font-size: 2rem;
+    margin-right: 2rem;
+    text-transform: uppercase;
+}
+
+.shop-books-current-page
+{
+    border-bottom: 1px solid black;
+    padding: 0;
+}
+/**/
+
+
+
+/*Nav bar*/
+
+
+
+.shop-books-nav
+{
+    background-color: var(--shade-2);
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: 180px 400px;
+}
+
+.shop-books-nav-title
+{
+    font-size: 2.5rem;
+}
+
+/*Sort*/
+
+.shop-books-nav-sort-wrapper
+{
+    //background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--background-2);
+}
+
+.shop-books-nav-sort
+{
+    //background-color: lightblue;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+
+
+
+.custom-select {
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.select-trigger {
+    font-size: 1.5rem;
+    padding: 1em 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.custom-placeholder
+{
+    color: #747474;
+}
+
+.arrow {
+    font-size: 0.8em;
+    transition: transform 0.5s ease;
+}
+
+.arrow-animate
+{
+    transform: rotate(-180deg);
+}
+
+.options {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    background-color: white;
+}
+.show-options
+{
+    display: block;
+}
+
+.option {
+    font-size: 1.4rem;
+    border-bottom: 1px solid var(--border-subtile);
+    padding: 1.6rem;
+    transition: background-color 0.5s, color 0.5s ease;
+}
+
+.option:hover {
+    background-color: #f2f2f2;
+}
+
+/*Filter*/
+.shop-books-nav-filter-wrapper
+{
+    margin-top: 15rem;
+    //background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.shop-books-nav-filter
+{
+    //background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 85%;
+}
+
+.shop-books-nav-filter-type-title
+{
+    font-size: 1.5rem;
+}
+
+.shop-books-nav-filter-type-authors-name
+{
+    font-size: 1.5rem;
+    padding: 1em 1em;
+    border-radius: 5px;
+    width: 100%;
+}
+
+
+
+
+
+
+/**/
+.shop-books-main
+{
+    //background-color: indianred;
+    padding: 0.5rem 4rem;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    row-gap: 1.5rem;
+}
+
+.shop-books-main-grid
+{
+    //background: yellow;
+    padding-bottom: 3.3rem;
+    align-content: start;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 2rem;
+    row-gap: 3rem;
+}
+
+.adjust-card-for-shop
+{
+    height: 100%;
+}
+
+.shop-books-main-nav
+{
+    //background-color: #3d29be;
+    display: grid;
+    place-items: center;
+}
+
+.shop-books-main-nav-container
+{
+    display: flex;
+    //background-color: yellow;
+    align-items: center;
+    width: 40%;
+    font-weight: 500;
+}
+
+.shop-books-main-nav-item
+{
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 0.5em 1em;
+}
+
+.main-nav-arrow
+{
+    background-color: var(--secondary);
+    border-radius: 5px;
+    font-weight: 700;
+    padding: 0.1em 0.7em;
+    font-size: 3.2rem;
+    cursor: pointer;
+    color: white;
+
+}
+
+.left-arrow
+{
+    margin-left: auto;
+}
+
+.right-arrow
+{
+    margin-right: auto;
+}
+
+.main-nav-arrow-animate
+{
+    display: block;
+    transform: scaleX(150%);
+    transition: all 0.3s ease;
+}
+.main-nav-arrow:hover .main-nav-arrow-animate
+{
+    transform: scaleX(100%);
+    color: black;
+}
+
+
+
+.shop-books-main-nav-active-page
+{
+    background-color: var(--accent-1);
+    color: white;
+    border-radius: 3px;
+}
+
+
+
+

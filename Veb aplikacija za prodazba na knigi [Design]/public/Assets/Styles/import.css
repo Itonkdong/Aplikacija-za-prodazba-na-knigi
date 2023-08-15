@@ -15,6 +15,15 @@
 @import "./login-registration.css";
 
 
+/*Shop*/
+
+@import "./shop-books.css";
+
+
+/*Product Page*/
+@import "./book-product.css";
+
+
 
 
 @import "./color-themes.css";

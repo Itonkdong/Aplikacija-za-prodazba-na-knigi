@@ -16,15 +16,15 @@
     align-items: center;
     gap: 2rem;
     //background-color: var(--background);
-    background-color: var(--secondary);
-    border-radius: var(--br-big);
+    background-color: var(--background);
+    border-radius: 5px;
 }
 
 .popular-books-title
 {
     font-size: 4rem;
     //background-color: red;
-    color: var(--primary);
+    color: white;
     margin-bottom: 15px;
 }
 
@@ -42,10 +42,10 @@
     height: 72%;
 }
 
-.popular-book-card
+.book-card
 {
     //background-color: var(--secondary);
-    background-color: var(--primary);
+    background-color: var(--shade-1);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -53,7 +53,7 @@
     padding: 1.7rem 2rem;
     border-radius: 5px;
     height: 105%;
-    color: white;
+    color: black    ;
     cursor: pointer;
 
     /*Animating card*/
@@ -62,17 +62,17 @@
     transition: all 0.5s ease
 }
 
-.popular-book-card:hover
+.book-card:hover
 {
-    background-color: rgb(42, 77, 57);
+    background-color: rgb(184, 196, 185);
 }
 
-.popular-book-card:active
+.book-card:active
 {
     transform: translateY(3px);
 }
 
-.popular-book-img
+.book-card-img
 {
     height: 50%;
     display: flex;
@@ -88,14 +88,14 @@
 
 }
 
-.popular-book-img img
+.book-card-img img
 {
     height: 80%;
     aspect-ratio: 1/1;
     border-radius: 20px;
 }
 
-.popular-book-tags
+.book-card-tags
 {
     position: absolute;
     bottom: -30px;
@@ -104,16 +104,17 @@
     display: flex;
     justify-content: center;
     gap: 0.8rem;
+    color: white;
     transition: all 0.5s ease;
 }
 
-.popular-book-card:hover .popular-book-tags
+.book-card:hover .book-card-tags
 {
     bottom: 8%;
     opacity: 1;
 }
 
-.popular-book-tag
+.book-card-tag
 {
     padding: 0.7rem 1rem;
     border-radius: 5px;
@@ -128,10 +129,10 @@
 
 .tag-sale
 {
-    background-color: #bb3d3d;
+    background-color: var(--alert);
 }
 
-.popular-book-title
+.book-card-title
 {
     font-size: 2.3rem;
     font-weight: 800;
@@ -142,7 +143,7 @@
     width: 100%;
 }
 
-.popular-book-info
+.book-card-info
 {
     align-self: flex-start;
     //margin-bottom: 1.5rem;
@@ -153,12 +154,12 @@
     overflow: hidden;
 }
 
-.popular-book-author
+.book-card-author
 {
-    color: #c7baba;
+    color: #6b5757;
 }
 
-.popular-book-genre
+.book-card-genre
 {
     position: absolute;
     top: 0;
@@ -168,10 +169,11 @@
     border-radius: 5px;
     font-size: 1.1rem;
     transition: all 0.5s ease;
+    color: white;
     opacity: 0;
 }
 
-.popular-book-card:hover .popular-book-genre
+.book-card:hover .book-card-genre
 {
     right: 0;
     opacity: 1;
@@ -184,13 +186,13 @@
     transition: all 0.5s ease;
 }
 
-.popular-book-card:hover .book-by-animate
+.book-card:hover .book-by-animate
 {
     transform: translateX(0ch);
 }
 
 
-.popular-book-prices
+.book-card-prices
 {
     font-size: 2rem;
     font-weight: 500;
@@ -211,18 +213,19 @@
     overflow: hidden;
 }
 
-.popular-book-regular-price
+.book-card-regular-price
 {
-    background-color: var(--secondary);
+    background-color: var(--primary);
+    color: white;
     padding: 0.3em 1em;
     border-radius: var(--br-sml);
 }
 
-.popular-book-old-price
+.book-card-old-price
 {
     padding: 0.3em 1em;
     opacity: 0.5;
-    color: white;
+    color: black;
     text-decoration: line-through;
     transition: all 0.5s ease;
 }
@@ -241,27 +244,27 @@
     transition: all 0.5s ease;
 }
 
-.popular-book-card:hover  .popular-book-old-price
+.book-card:hover  .book-card-old-price
 {
     opacity: 0;
 }
 
-.popular-book-card:hover  .sale-percentage
+.book-card:hover  .sale-percentage
 {
     opacity: 1;
     top: 0;
 }
 
-.popular-book-button
+.book-card-button
 {
     padding: 1em 2em;
 }
-.popular-book-button:first-child
+.book-card-button:first-child
 {
     width: 100%;
 }
 
-.popular-book-buttons
+.book-card-buttons
 {
     display: flex;
     justify-content: center;
@@ -277,16 +280,16 @@
 .content {
     transition: transform 0.5s ease;
 }
-.popular-book-card:hover .content {
+.book-card:hover .content {
     transform: translateY(-10px); /* Adjust content position when buttons are shown */
 }
 
-.popular-book-card:hover .popular-book-buttons {
+.book-card:hover .book-card-buttons {
     transform: translateY(-12px); /* New position when hovered */
     opacity: 1;
 }
 
-.popular-book-card:hover
+.book-card:hover
 {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 

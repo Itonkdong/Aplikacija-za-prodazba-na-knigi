@@ -94,7 +94,7 @@
 
 .cart
 {
-    background-image: url("../Images/Icons/shopping-cart-icon.svg");
+    background-image: url("../Images/icons/shopping-cart-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 50%;
@@ -103,7 +103,7 @@
 
 .profile
 {
-    background-image: url("../Images/Icons/profile-icon.svg");
+    background-image: url("../Images/icons/profile-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 50%;
@@ -112,7 +112,7 @@
 
 .contact
 {
-    background-image: url("../Images/Icons/contact-icon.svg");
+    background-image: url("../Images/icons/contact-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 50%;

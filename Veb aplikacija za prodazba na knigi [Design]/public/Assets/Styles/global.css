@@ -17,6 +17,15 @@
     --secondary: #c1cfdc;
     --accent-1: #4b6b86;
     --accent-2: #4176a4;
+    --shade-1: #c8d8ca;
+    --shade-2: #dce8e0;
+    --shade-3: #d4e3d4;
+    --shade-4: #baccbe;
+    --shade-5: #bed7c5;
+
+    --alert:#bb3d3d;
+
+    --border-subtile: #f1ecec;
 
     /*--text: #0c1d14;
     --background: #e5f1e4;
@@ -42,17 +51,21 @@
     box-sizing: border-box;
 }
 
-/* Remove default margin */
+/* Remove default margin and padding*/
 body,
 h1,
 h2,
 h3,
 h4,
+h5,
+h6,
 p,
 figure,
 blockquote,
 dl,
-dd, ul, ol {
+dd,
+ul,
+ol {
     margin: 0;
 }
 
@@ -163,6 +176,8 @@ select {
     transform: translateY(-3px);
 }
 
+/*Global element styles*/
+
 .btn-default
 {
     border: none;
@@ -190,12 +205,13 @@ select {
     padding: 0.7em 1.2em;
 }
 
-input
+input, textarea
 {
+    border: none;
     transition: border 0.5s ease;
 }
 
-input:focus
+input:focus, select:focus, textarea:focus
 {
     outline: none;
 }
