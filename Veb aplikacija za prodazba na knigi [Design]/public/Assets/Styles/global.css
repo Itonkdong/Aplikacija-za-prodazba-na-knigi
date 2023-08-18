@@ -86,11 +86,10 @@ html
 {
     font-size: var(--root-font);
     font-family: var(--ff-main), sans-serif;
+
 }
 
-html:focus-within {
-    scroll-behavior: smooth;
-}
+
 
 /* Set core body defaults */
 body {
@@ -99,7 +98,31 @@ body {
     //background-color: var(--background);
     line-height: 1.5;
     padding: 0;
+    scrollbar-width: thin; /* Width of the scrollbar */
 }
+
+
+body:focus-within {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 9px;
+}
+
+body::-webkit-scrollbar-track {
+    /*background: #343540;*/
+    background-color: var(--primary);
+}
+
+body::-webkit-scrollbar-thumb {
+    /*background: #b7b8c1;*/
+    background-color: var(--shade-1);
+    border-radius: 4px;
+}
+
+
+
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
@@ -212,6 +235,11 @@ input, textarea
 }
 
 input:focus, select:focus, textarea:focus
+{
+    outline: none;
+}
+
+input:active
 {
     outline: none;
 }

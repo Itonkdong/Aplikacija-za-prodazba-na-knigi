@@ -1,0 +1,12 @@
+.page-wrapper
+{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    background-color: var(--background);
+}
+
+.nav-bar
+{
+    justify-self: center;
+}

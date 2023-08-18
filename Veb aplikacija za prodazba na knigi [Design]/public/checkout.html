@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CheckOut</title>
+    <link rel="stylesheet" href="Assets/Styles/import.css">
+</head>
+<body>
+<div class="checkout-page-wrapper">
+    <div class="checkout-grid">
+        <div class="checkout-main-info">
+            <div class="checkout-main-info-header shadow2">
+                <h2>Information</h2>
+                <nav>
+                    <div>Cart</div>
+                    <div>></div>
+                    <div>Information</div>
+                    <div>></div>
+                    <div>Shipping</div>
+                    <div>></div>
+                    <div>Payment</div>
+                </nav>
+
+            </div>
+
+            <!--Payment-part is an :class-->
+            <div class="checkout-confirmation-container payment-part">
+                <div class="checkout-confirmation-main-info">
+                    <div class="checkout-confirmation-main-info-item">
+                        <h5>Contact</h5>
+                        <div>kostadinoskiviktor@yahoo.com</div>
+                        <div>Change</div>
+                    </div>
+                    <div class="checkout-confirmation-main-info-item">
+                        <h5>Ship to</h5>
+                        <div>
+                            <span>Orce Nikolov</span>
+                            <span>202/17,</span>
+                            <span>Skopje,</span>
+                            <span>Macedonia,</span>
+                            <span>1000,</span>
+                            <span>MK</span>
+                        </div>
+                        <div>Change</div>
+                    </div>
+                    <!--There should be v-if on the line below-->
+
+                    <div class="checkout-confirmation-main-info-item">
+                        <h5>Method</h5>
+                        <div>Regular delivery: $2.00</div>
+                        <div>Change</div>
+                    </div>
+                </div>
+                <!--There should be v-if on the 3 lines below-->
+
+                <div class="checkout-confirmation-paymentInfo">
+                    <h2>Payment Methods</h2>
+                    <h3>All transactions are secure and encrypted</h3>
+                    <div class="checkout-confirmation-paymentInfo-container">
+                        <div class="checkout-confirmation-paymentInfo-item-container">
+                            <div class="checkout-confirmation-paymentInfo-item">
+                                <input type="radio" name="payment-method" id="payWithCard" checked>
+                                <div>Pay online with a card <span>&#128179;</span></div>
+                            </div>
+                            <p id="pay-card-para" class="payment-explain-para reveal reveal-animate">
+                                Pay immediately online with your Visa or Master card
+                            </p>
+                        </div>
+                        <div class="checkout-confirmation-paymentInfo-item-container">
+                            <div class="checkout-confirmation-paymentInfo-item">
+                                <input type="radio" name="payment-method" id="payOnDelivery">
+                                <div>Pay on delivery <span>&#128181;</span></div>
+                            </div>
+                            <p class="payment-explain-para" id="pay-onDelivery-para">
+                                Pay on delivery when the book is shipped to you
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout-confirmation-termsConditions">
+                    <p>Your personal data will be used so that we can deliver the ordered products to you and for other
+                        purposes described in our Terms of Service and Use Policy.</p>
+                    <div>
+                        <input type="checkbox">
+                        <div>I have read and agree to the terms and conditions *</div>
+                    </div>
+                </div>
+                <div class="checkout-confirmation-placeOrder">
+                    <button class="btn-default">&#128274; Place Order</button>
+                </div>
+
+
+                <!--There should be v-if on the 3 lines below-->
+                <!--<div class="checkout-confirmation-shippingInfo">
+                    <h2>Shipping Methods</h2>
+                    <div>Standard Shipping fee: <span>$2.00</span>
+                    </div>
+                </div>
+                <div class="checkout-confirmation-notes">
+                    <h5>Note for the delivery (optional)</h5>
+                    <textarea placeholder="Spacial notes for your delivery"></textarea>
+                </div>
+                <div class="checkout-main-info-nav">
+                    <button class="btn-default shadow2" type="button"><span>&#10140;</span> Return To Cart</button>
+                    <button class="btn-default shadow2" type="button">Continue to Payment <span>&#10140;</span></button>
+                </div>-->
+
+            </div>
+
+<!--This is the first part of the page. There should be a v-if on the whole form-->
+
+            <!--<form class="checkout-main-info-content">
+                <h4>Shipping address</h4>
+                <div class="checkout-main-info-initials">
+                    <div>
+                        <h6>Name *</h6>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <h6>Surname *</h6>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="checkout-main-info-streetAddress">
+                    <h6>Street address</h6>
+                    <input type="text">
+                    <input type="text" placeholder="Apartment, floor, ect... (optional)">
+                </div>
+                <div class="checkout-main-info-country">
+                    <h6>Country</h6>
+                    <input type="text">
+                </div>
+                <div class="checkout-main-info-cityRegionZip">
+                    <div>
+                        <h6>City *</h6>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <h6>Region *</h6>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <h6>Zip Code *</h6>
+                        <input type="number">
+                    </div>
+                </div>
+                <div class="checkout-main-info-tel">
+                    <h6>Phone Number</h6>
+                    <input type="tel">
+                </div>
+                <div class="checkout-main-info-nav">
+                    <button class="btn-default shadow2" type="button"><span>&#10140;</span>Return To Cart</button>
+                    <button class="btn-default shadow2" type="button">Continue to Shipping <span>&#10140;</span></button>
+                </div>
+            </form>-->
+
+        </div>
+        <div class="checkout-sec-info">
+            <div class="checkout-sec-info-container shadow2">
+                <h3 class="checkout-sec-info-header">
+                    Order Summary
+                </h3>
+                <div class="checkout-sec-info-items">
+                    <div class="checkout-sec-info-item shadow2">
+                        <div class="checkout-sec-info-item-img">
+                            <div class="checkout-sec-info-item-amount">x5</div>
+                            <img class="shadow2" src="./Assets/Images/book-images/book-covers/cover-1-tmp.jpg"
+                                 alt="Book Cover">
+                        </div>
+                        <div class="checkout-sec-info-item-coverInfo">
+                            <h4>
+                                Letters To Milena
+                            </h4>
+                            <h5>
+                                Franz Kafka
+                            </h5>
+                        </div>
+                        <div class="checkout-sec-info-item-prices">
+                            <div class="checkout-sec-info-item-prices-oldPrice">
+                                $130.00
+                            </div>
+                            <div class="checkout-sec-info-item-prices-regularPrice">
+                                $140.00
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="checkout-sec-info-item shadow2">
+                        <div class="checkout-sec-info-item-img">
+                            <div class="checkout-sec-info-item-amount">x2</div>
+                            <img class="shadow2" src="./Assets/Images/book-images/book-covers/cover-2-tmp.jpg"
+                                 alt="Book Cover">
+                        </div>
+                        <div class="checkout-sec-info-item-coverInfo">
+                            <h4>
+                                Hello again Solder
+                            </h4>
+                            <h5>
+                                Mujo Mujoski
+                            </h5>
+                        </div>
+                        <div class="checkout-sec-info-item-prices">
+                            <div class="checkout-sec-info-item-prices-oldPrice">
+                                $30.00
+                            </div>
+                            <div class="checkout-sec-info-item-prices-regularPrice">
+                                $1240.00
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="checkout-sec-info-coupons">
+                    <input class="shadow2" type="text" placeholder="Coupon">
+                    <button class="btn-default shadow2">Use Coupon &#127915;</button>
+                </div>
+                <div class="checkout-sec-info-priceSummary">
+                    <div class="checkout-sec-info-priceSummary-total ">
+                        <h5>Total:</h5>
+                        <div>$70.00</div>
+                    </div>
+                    <div class="checkout-sec-info-priceSummary-shipping ">
+                        <h5>Shipping</h5>
+                        <div>$5.00</div>
+                    </div>
+                </div>
+                <div class="checkout-sec-info-totalPrice">
+                    <h5>
+                        To pay:
+                    </h5>
+                    <div>
+                        $60
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    let radioBtnCard = document.getElementById('payWithCard');
+    let radioBtnDelivery = document.getElementById('payOnDelivery');
+    radioBtnCard.addEventListener('click', async () => {
+        console.log('CLicked card')
+        let para = document.getElementById('pay-onDelivery-para');
+        para.classList.remove('reveal-animate');
+        setTimeout(() => {
+            para.classList.remove('reveal');
+        }, 300);
+        setTimeout(() => {
+            para = document.getElementById('pay-card-para');
+            para.classList.add('reveal');
+            setTimeout(() => {
+                para.classList.add('reveal-animate');
+            }, 100);
+        }, 300);
+
+
+    })
+
+    radioBtnDelivery.addEventListener('click', () => {
+        console.log('CLicked delivery')
+        let para = document.getElementById('pay-card-para');
+        para.classList.remove('reveal-animate');
+        setTimeout(() => {
+            para.classList.remove('reveal');
+        }, 300);
+
+        setTimeout(() => {
+            para = document.getElementById('pay-onDelivery-para');
+            para.classList.add('reveal');
+            setTimeout(() => {
+                para.classList.add('reveal-animate');
+            }, 100);
+        }, 300);
+    })
+</script>
+
+</body>
+</html>

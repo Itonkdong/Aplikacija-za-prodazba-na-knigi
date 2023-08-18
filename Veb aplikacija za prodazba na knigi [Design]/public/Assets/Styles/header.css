@@ -92,7 +92,7 @@
     border-radius: var(--br-sml);
 }
 
-.cart
+.cart-icon
 {
     background-image: url("../Images/icons/shopping-cart-icon.svg");
     background-repeat: no-repeat;
@@ -101,7 +101,7 @@
     width: 12%;
 }
 
-.profile
+.profile-icon
 {
     background-image: url("../Images/icons/profile-icon.svg");
     background-repeat: no-repeat;
@@ -110,7 +110,7 @@
     width: 12%;
 }
 
-.contact
+.contact-icon
 {
     background-image: url("../Images/icons/contact-icon.svg");
     background-repeat: no-repeat;

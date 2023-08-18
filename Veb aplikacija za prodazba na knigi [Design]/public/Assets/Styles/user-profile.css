@@ -1,0 +1,128 @@
+.user-profile-page-wrapper
+{
+    height: 100vh;
+}
+
+.user-profile-wrapper
+{
+    background-color: var(--background-2);
+    margin-top: 3rem;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+}
+
+.user-profile
+{
+    //background-color: red;
+    height: 100%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 0.8fr 3fr;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.user-profile-nav
+{
+    background-color: var(--shade-2);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.user-profile-nav-header
+{
+    //background-color: gray;
+    font-size: 2.6rem;
+    text-align: center;
+    padding: 1.2rem;
+}
+
+.user-profile-nav-items
+{
+    margin-bottom: auto;
+    //background-color: lightcoral;
+    padding: 1rem;
+    font-size: calc(1rem + .6vw);
+}
+
+.user-profile-nav-item
+{
+    padding: 1rem;
+    //background-color: lightblue;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.user-profile-nav-item:hover
+{
+    background-color: var(--shade-1);
+}
+
+.user-profile-nav-buttons
+{
+    display: flex;
+    justify-content: center;
+}
+
+.user-profile-nav-buttons > button
+{
+    background-color: var(--primary);
+    color: white;
+    width: 60%;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.user-profile-main
+{
+    background-color:blue;
+    display: grid;
+    grid-template-rows: 1fr 3fr 0.7fr;
+    gap: 1rem;
+    padding: 1rem 4rem;
+}
+
+.user-profile-main-header
+{
+    background-color: red;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.user-profile-profilePicture
+{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-profile-profilePicture > img
+{
+    width: 50%;
+    aspect-ratio: 1/1;
+}
+
+.user-profile-displayName
+{
+    flex: 4;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.user-profile-main-info
+{
+    background-color: yellow;;
+}
+
+.user-profile-main-footer
+{
+    background-color: gray;
+}

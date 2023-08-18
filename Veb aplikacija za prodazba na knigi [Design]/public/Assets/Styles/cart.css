@@ -1,0 +1,267 @@
+.cart-page-wrapper
+{
+    min-height: 100vh;
+}
+
+
+.cart-wrapper
+{
+    background-color: var(--background-2);
+    margin-top: 3rem;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+
+}
+
+.cart-grid
+{
+    //background-color: red;
+    width: 85%;
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 67% 1fr;
+    padding: 1.5rem 3rem;
+    column-gap: 2rem;
+}
+
+.cart
+{
+    display: grid;
+    grid-template-rows: 85px 1fr;
+    gap: 1rem;
+    padding: 0.4rem;
+}
+
+.cart-header
+{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    font-size: 1.7rem;
+    background-color: var(--shade-1);
+    border-radius: 7px;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    position: sticky;
+    top: 5px;
+}
+
+.cart-header > h4
+{
+    margin-left: 4.5rem;
+    flex: 5.5;
+}
+
+.cart-header > div
+{
+    padding: 1rem 3rem;
+    text-align: center;
+    flex: 1
+}
+
+.cart-header > div:last-of-type
+{
+}
+
+.cart-items
+{
+   // background-color: mediumpurple;
+    display: grid;
+
+    gap: 1rem;
+    grid-auto-rows: 0.2fr;
+    padding: 1rem;
+}
+
+.cart-item
+{
+    background-color: var(--shade-2);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+}
+
+.cart-item-book-info
+{
+    display: flex;
+    gap: 1.5rem;
+    height: 100%;
+}
+
+.cart-item-img
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 0.6rem;
+}
+
+.cart-item-img img
+{
+    height: 70%;
+    border-radius: 7px;
+    aspect-ratio: 1/1;
+
+}
+
+.cart-item-coveInfo
+{
+    flex: 4;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cart-item-coveInfo-title
+{
+    letter-spacing: 1px;
+}
+
+.cart-item-coverInfo-author
+{
+    color: gray;;
+}
+
+.cart-item-price
+{
+    display: grid;
+    place-items: center;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.cart-item-amountMenu
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-item-amountMenu-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    padding: 1rem;
+}
+.cart-item-amountMenu-container > div
+{
+    padding: 0.4rem 1.2rem;
+    background-color: var(--shade-1);
+    font-size: 1.4rem;
+    border-radius: 3px;
+}
+.cart-item-amountMenu-container > button
+{
+    border-radius: 3px;
+    border: none;
+    background-color: var(--secondary);
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0.4rem 1rem;
+}
+
+.cart-item-totalPrice
+{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+
+
+
+
+
+/*CheckOut*/
+
+.cart-checkout
+{
+    //background-color: yellow;
+    padding: 1rem;
+    position: relative;
+}
+
+.cart-checkout-container
+{
+    background-color: var(--shade-3);
+    border-radius: 7px;
+    height: 350px;
+    display: grid;
+    grid-auto-rows: 0.7fr 0.7fr 0.7fr 1fr 0.8fr;
+    padding: 1rem;
+    gap: 0.8rem;
+    position: sticky;
+    top: 5px;
+}
+
+.cart-checkout-container > div
+{
+    /*/background-color: maroon;*/
+}
+
+.cart-checkout-header
+{
+    font-size: 2.7rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: grid;
+    place-items: center;
+}
+
+.cart-checkout-item
+{
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    padding: 1rem;
+    letter-spacing: 1px;
+}
+
+.cart-checkout-item > h4{
+    margin-right: auto;
+}
+
+.cart-checkout-coupons
+{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.cart-checkout-coupons> input
+{
+    flex: 3;
+    font-size: 1.6rem;
+    padding: 1.2rem;
+    border-radius: 5px;
+    background-color: var(--shade-4);
+    border: 2px solid #b9cabd;
+}
+
+.cart-checkout-coupons> input:focus
+{
+    border: 2px solid #91a296;
+}
+
+.cart-checkout-coupons > button
+{
+    flex: 1;
+    background-color: var(--accent-2);
+    color: white;
+    padding: 1.3rem;
+}
+
+.cart-checkout-container > button
+{
+    background-color: var(--accent-1);
+    color: white;
+}
