@@ -1,0 +1,261 @@
+.user-profile-popup-order
+{
+    width: 60%;
+    border-radius: 10px;
+    height: 90%;
+    background-color: var(--background-2);
+    display: grid;
+    padding: 1rem;
+    gap: 1rem;
+    letter-spacing: 1px;
+    grid-template-rows: 0.8fr 0.8fr 0.8fr 5fr 0.75fr;
+    transform: scale(95%);
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+.user-profile-popup-order-reveal
+{
+    transform: scale(100%);
+    opacity: 1;
+}
+
+.user-profile-popup-order > *
+{
+    /*background-color: yellow;*/
+}
+
+.user-profile-popup-order-title
+{
+    display: flex;
+    font-size: calc(1rem + 0.5vw);
+    background-color: var(--shade-2);
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+.close-cross
+{
+    position: absolute;
+    top: 10%;
+    right: 2%;
+    transition: all 0.4s ease;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.close-cross:hover
+{
+    scale: 105%;
+}
+
+.user-profile-popup-order-subtitle
+{
+    font-size: calc(1rem + 0.25vw);
+    display: grid;
+    align-content: center;
+    padding-left: 1rem;
+}
+
+.user-profile-popup-menageOrders-subtitle
+{
+    display: grid;
+    grid-template-columns: 0.5fr 0.9fr 2fr;
+    gap: 1rem;
+    font-size: clamp(1rem, 1rem + 0.1vw, 2rem);
+}
+
+.user-profile-popup-menageOrders-subtitle span{
+    /*margin-right: auto;*/
+    text-align: center;
+    font-weight: 700;
+}
+
+.user-profile-popup-order-secInfo
+{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-profile-popup-order-secInfo > div
+{
+    background-color: var(--background-3);
+    border-radius: 5px;
+    color: white;
+    padding: 1em;
+    font-size: calc(1rem + 0.2vw);
+    text-transform: capitalize;
+}
+
+.user-profile-popup-order-secInfo > div:first-of-type{
+
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.user-profile-popup-order-mainInfo
+{
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+    gap: 0.3rem;
+    padding: 0.5rem;
+}
+
+.user-profile-popup-order-mainInfo-header
+{
+    font-size: calc(1rem + 0.5vw);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-profile-popup-order-items
+{
+    display: grid;
+    grid-auto-rows: 24%;
+    height: 250px;
+    gap: 1rem;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+}
+
+@media (max-width: 1536px) {
+    .user-profile-popup-order-items {
+        height: 190px;
+    }
+}
+
+.user-profile-popup-order-item
+{
+    background-color: var(--shade-2);
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 0.5fr 5fr 2fr;
+    align-content: center;
+    gap: 1rem;
+    scroll-snap-align: start;
+}
+
+.user-profile-popup-order-img
+{
+    display: grid;
+    place-items: center;
+}
+
+.user-profile-popup-order-img > img {
+    width: 50%;
+    aspect-ratio: 1/1;
+    border-radius: 7px;
+}
+
+.user-profile-popup-order-coverInfo
+{
+    letter-spacing: 1px;
+}
+
+.user-profile-popup-order-coverInfo > h4
+{
+    font-size: calc(1rem + 0.2vw);
+}
+
+.user-profile-popup-order-coverInfo > h5
+{
+    font-size: calc(1rem + 0.1vw);
+}
+
+.user-profile-popup-order-prices
+{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1.4rem;
+    gap: 1rem;
+    align-items: center;
+}
+
+.user-profile-popup-order-prices > div
+{
+    padding: 0.6em;
+    font-size: clamp(0.4rem, 1rem + 0.25vw, 1.6rem);
+    background-color: var(--accent-2);
+    color: white;
+    border-radius: 5px;
+}
+
+.user-profile-popup-order-total
+{
+    display: grid;
+    align-items: center;
+    justify-items: end;
+    font-size: calc(1rem + 0.3vw);
+    margin-right: 1rem;
+
+}
+
+.user-profile-popup-order-total > div
+{
+    background-color: var(--accent-1);
+    color: white;
+    border-radius: 5px;
+    padding: 0.7em;
+}
+
+.user-profile-popup-order-buttons
+{
+    display: grid;
+    place-items: center;
+}
+
+.user-profile-popup-order-buttons > button
+{
+    padding: 1rem;
+    font-size: calc(1rem + 0.4vw);
+    text-transform: uppercase;
+    background-color: var(--alert);
+    color: white;
+    width: 30%;
+}
+
+.user-profile-popup-menageOrders-buttons
+{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-profile-popup-menageOrders-buttons > button
+{
+    padding: 1rem;
+    font-size: calc(1rem + 0.4vw);
+    text-align: center;
+    text-transform: uppercase;
+    background-color: var(--alert);
+    color: white;
+    width: 20%;
+}
+
+.user-profile-popup-menageOrders-buttons > button:nth-child(2)
+{
+    background-color: var(--accent-1);
+}
+
+.user-profile-popup-menageOrders-buttons > button:nth-child(3)
+{
+    background-color: var(--background);
+}
+
+.menageOrders-custom-dropdown
+{
+    padding: 0.7rem;
+}
+
+.fixedWidth{
+    width: 170px
+}

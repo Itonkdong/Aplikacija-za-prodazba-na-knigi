@@ -1,0 +1,120 @@
+.user-profile-popup-menageDetails
+{
+    background-color: var(--background-2);
+    border-radius: 5px;
+    width: 40%;
+    height: 90%;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.user-profile-popup-menageDetails > *
+{
+    /*background-color: gray;*/
+}
+
+.user-profile-popup-menageDetails-header
+{
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(1.2rem, 1rem + 0.5vw, 3rem);
+    position: relative;
+}
+
+.back-arrow
+{
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    transform: rotate(180deg) scale(130%);
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+    padding: 1rem;
+}
+.back-arrow:hover
+{
+    transform: rotate(180deg) scale(140%);
+}
+
+.back-arrow:active
+{
+    transform: rotate(180deg) scale(110%);
+}
+
+.user-profile-popup-menageDetails-main
+{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.user-profile-popup-menageDetails-main > *{
+    background-color: var(--shade-2);
+    border-radius: 5px;
+}
+
+.user-profile-popup-menageDetails-main > div > *
+{
+    font-size: clamp(1rem, 1rem + 0.3vw, 2rem);
+}
+
+.user-profile-popup-menageDetails-main > div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.user-profile-popup-menageDetails-main > div > div
+{
+    background-color: var(--shade-3);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.6rem;
+    width: 55%;
+    text-align: center;
+}
+
+.user-profile-popup-menageDetails-main input
+{
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.6rem;
+    width: 55%;
+    text-align: center;
+}
+
+.user-profile-popup-menageDetails-footer
+{
+    display: flex;
+    background-color: var(--secondary);
+    border-radius: 5px;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.user-profile-popup-menageDetails-footer > button
+{
+    width: 40%;
+    color: white;
+}
+
+.user-profile-popup-menageDetails-footer > button:first-child
+{
+    background-color: var(--background);
+}
+
+.user-profile-popup-menageDetails-footer > button:last-child
+{
+    background-color: var(--alert);
+}

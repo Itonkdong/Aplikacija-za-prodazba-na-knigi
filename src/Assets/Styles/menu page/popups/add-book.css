@@ -1,0 +1,283 @@
+.user-profile-popup-addBook
+{
+    width: 80%;
+    height: 90%;
+    background-color: var(--background-2);
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: 0.5fr 2fr 2fr 0.5fr;
+    padding: 1rem;
+    gap: 1rem;
+    opacity: 0;
+    transform: scale(80%);
+    transition: all 0.2s ease;
+}
+
+.user-profile-popup-addBook-appear
+{
+    opacity: 1;
+    transform: scale(100%);
+}
+
+.user-profile-popup-addBook > *
+{
+    /*background-color: gray;*/
+}
+
+.user-profile-popup-addBook-main
+{
+    display: grid;
+    padding: 0.5rem;
+    gap: 0.5rem;
+    grid-template-columns: 1.5fr 3fr 3fr;
+}
+
+.user-profile-popup-addBook-header
+{
+    background-color: var(--shade-1);
+    border-radius: 3px;
+    display: grid;
+    place-items: center;
+    font-size: clamp(1.5rem, 1rem + 1vw, 3rem);
+    position: relative;
+}
+
+.user-profile-popup-addBook-main > *
+{
+    /*background-color: lightblue;*/
+}
+
+.user-profile-popup-addBook-img
+{
+    background-color: var(--secondary);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.user-profile-popup-addBook-img> div{
+    display: flex;
+    height: 25%;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.user-profile-popup-addBook-img > img
+{
+    width: 65%;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+}
+
+.user-profile-popup-addBook-img button
+{
+    padding: 0.2rem 0.4rem;
+}
+
+.user-profile-popup-addBook-coverInfo
+{
+    display: grid;
+    grid-auto-rows: 1fr;
+    align-items: center;
+    padding-left: 1rem;
+
+}
+
+.user-profile-popup-addBook-coverInfo > div > h5
+{
+    font-size: clamp(1rem, 1rem + 0.2vw, 2rem);
+}
+
+.user-profile-popup-addBook-coverInfo > div > input
+{
+    font-size: clamp(1rem, 1rem + 0.3vw, 2rem);
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 60%;
+}
+
+.user-profile-popup-addBook-tags
+{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user-profile-popup-addBook-tags-menu
+{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.user-profile-popup-addBook-tags-menu > div
+{
+    background-color: var(--shade-3);
+    color: black;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.user-profile-popup-addBook-tags-menu > div:hover
+{
+    transform: scale(103%);
+}
+
+.user-profile-popup-addBook-tags > div
+{
+    background-color: var(--shade-3);
+    border-radius: 5px;
+    padding: 0.7rem;
+    font-size: clamp(1rem, 1rem + 0.18vw, 2rem);
+
+}
+
+.user-profile-popup-addBook-tags > button
+{
+    padding: 0.8rem;
+    background-color: var(--primary);
+    color: white;
+}
+
+.user-profile-popup-addBook-moreInfo
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.user-profile-popup-addBook-moreInfo > *{
+    background-color: var(--shade-3);
+    display: flex;
+    gap: 0.7rem;
+    padding: 0.5rem;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: center;
+    font-size: clamp(1rem, 1rem + 0.3vw, 2rem);
+}
+
+.user-profile-popup-addBook-moreInfo input
+{
+    border-radius: 5px;
+    padding: 0.4rem 1rem;
+    width: 85%;
+}
+
+.user-profile-popup-addBook-sec
+{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.user-profile-popup-addBook-description
+{
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+
+}
+
+.user-profile-popup-addBook-description > h5
+{
+    font-size: clamp(1.2rem, 1rem + 0.5vw, 2.3rem);
+    place-self: center;
+}
+
+.user-profile-popup-addBook-description > div
+{
+    padding: 1rem;
+    display: grid;
+    place-items: center;
+}
+
+.user-profile-popup-addBook-description > div > textarea
+{
+    width: 100%;
+    height: 90%;
+    resize: none;
+    padding: 1rem;
+    font-size: clamp(1.2rem, 1rem + 0.2vw, 3rem);
+}
+
+.user-profile-popup-addBook-sec > *{
+    background-color: var(--shade-3);
+    border-radius: 5px;
+}
+
+.user-profile-popup-addBook-prices
+{
+    display: grid;
+    grid-template-rows: 40% 40%;
+    align-content: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.user-profile-popup-addBook-prices > *
+{
+    background-color: var(--shade-2);
+    border-radius: 5px;
+
+}
+
+.user-profile-popup-addBook-prices > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.user-profile-popup-addBook-prices > div > h5
+{
+    font-size: clamp(1rem, 1rem + 0.4vw, 2rem);
+}
+
+.user-profile-popup-addBook-prices > div > input
+{
+    font-size: clamp(1rem, 1rem + 0.25vw, 2rem);
+    border-radius: 5px;
+    padding: 0.7rem;
+    width: 40%;
+}
+
+.user-profile-popup-addBook-footer
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.user-profile-popup-addBook-footer > button
+{
+    width: 20%;
+}
+
+.user-profile-popup-addBook-footer > button:first-child
+{
+    background-color: var(--background);
+    color: white;
+}
+
+.user-profile-popup-addBook-footer > button:last-child
+{
+    background-color: var(--alert);
+    color: white;
+}

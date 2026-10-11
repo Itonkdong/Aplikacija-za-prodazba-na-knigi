@@ -1,0 +1,14 @@
+.page-wrapper
+{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 100px 50px 1fr;
+    background: var(--background);
+    background: -webkit-linear-gradient(to right, var(--background), var(--background-3));
+    background: linear-gradient(to right, var(--background), var(--background-3));
+}
+
+.nav-bar
+{
+    justify-self: center;
+}

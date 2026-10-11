@@ -1,0 +1,329 @@
+.user-profile-popup-editBook
+{
+    background-color: var(--background-2);
+    border-radius: 3px;
+    width: 85%;
+    height: 90%;
+    display: grid;
+    padding: 1rem;
+    gap: 1rem;
+    grid-template-rows: 1fr 2fr 3fr;
+    opacity: 0;
+    transform: scale(80%);
+    transition: all 0.2s ease;
+}
+
+.user-profile-popup-editBook-appear
+{
+    opacity: 1;
+    transform: scale(100%);
+}
+
+.user-profile-popup-editBook-header
+{
+    background-color: var(--secondary);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+.user-profile-popup-editBook-header > h4
+{
+    font-size: clamp(1.2rem, 1rem + 1vw, 5rem);
+}
+
+.user-profile-popup-editBook-header > h5
+{
+    font-size: clamp(1.2rem, 1rem + 0.5vw, 2rem);
+
+}
+
+.user-profile-popup-editBook-header > h5:last-of-type
+{
+    color: lightslategray;
+}
+
+.user-profile-popup-editBook-main
+{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 5fr;
+}
+.user-profile-popup-editBook-img
+{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    place-items: center;
+    gap: 0.4rem;
+}
+
+.user-profile-popup-editBook-img > img
+
+{
+    width: 60%;
+    aspect-ratio: 1/1;
+    border-radius: 7px;
+}
+.user-profile-popup-editBook-img > div
+{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    justify-content: center;
+}
+
+.user-profile-popup-editBook-bookInfo
+{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    background-color: var(--shade-3);
+    border-radius: 3px;
+    padding: 0.5rem;
+    gap: 0.5rem;
+}
+
+.user-profile-popup-editBook-bookInfo > div
+{
+    /*background-color: blue;*/
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: clamp(1.2rem, 1rem + 0.5vw, 3rem);
+}
+
+.user-profile-popup-editBook-bookInfo input
+{
+    padding: 0.3em;
+    border-radius: 5px;
+}
+
+.user-profile-popup-editBook-bookInfo button
+{
+    padding: 0.5em;
+    font-size: clamp(1rem, 1rem + 0.3vw, 2rem);
+
+}
+
+.user-profile-popup-editBook-bookInfo > div > div
+{
+    background-color: var(--shade-1);
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.user-profile-popup-editBook-sec
+{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2fr 2.5fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.user-profile-popup-editBook-description
+{
+    grid-row: 1/-1;
+    display: flex;
+    padding: 1rem;
+    /*padding: 0.5rem;*/
+    background-color: var(--shade-1);
+    border-radius: 5px;
+    flex-direction: column;
+}
+
+.user-profile-popup-editBook-description-interface
+{
+    grid-template-rows: 1fr 2fr 0.3fr;
+    gap: 1rem;
+}
+
+.user-profile-popup-editBook-description > h5
+{
+
+
+    font-size: clamp(1.3rem, 1rem + 0.6vw, 3rem);
+    place-self: center;
+}
+
+.user-profile-popup-editBook-description > p
+{
+    justify-self: center;
+
+    font-size: clamp(1.3rem, 1rem + 0.2vw, 3rem);
+    overflow: hidden;
+    padding: 0.6em;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    height: 100%;
+}
+
+.user-profile-popup-editBook-description textarea
+{
+    height: 100%;
+    font-size: clamp(1.3rem, 1rem + 0.2vw, 3rem);
+    padding: 0.6em;
+    border-radius: 5px;
+    resize: none;
+}
+
+.user-profile-popup-editBook-description > div
+{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+}
+.user-profile-popup-editBook-description button
+{
+    font-size:clamp(1.3rem, 1rem + 0.2vw, 3rem);
+    padding: 0.4em;
+    width: 20%;
+}
+
+.user-profile-popup-editBook-button
+{
+    border: none;
+    background-color: var(--accent-2);
+    color: white;
+    border-radius: 5px;
+    padding: 0;
+    font-size: clamp(1rem, 1rem + 0.2vw, 2rem);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.user-profile-popup-editBook-button:hover
+{
+    opacity: 85%;
+}
+
+.user-profile-popup-editBook-button:active
+{
+    opacity: 100%;
+}
+
+.user-profile-popup-editBook-storeInfo
+{
+    background-color: var(--shade-2);
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: 3fr 1.5fr;
+}
+
+.user-profile-popup-editBook-prices{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    font-size: clamp(1.2rem, 1rem + 0.5vw, 3rem);
+}
+
+
+
+.user-profile-popup-editBook-prices > div >h6
+{
+    font-size: clamp(1.2rem, 1rem + 0.5vw, 3rem);
+
+}
+
+.user-profile-popup-editBook-prices > div
+{
+    text-align: center;
+    background-color: var(--shade-1);
+    color: black;
+    border-radius: 5px;
+    width: 85%;
+    padding: 0.5rem;
+}
+
+.user-profile-popup-editBook-prices input
+{
+    width: 50%;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+.user-profile-popup-editBook-prices input[type="number"]::-webkit-inner-spin-button,
+.user-profile-popup-editBook-prices input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.user-profile-popup-editBook-storeInfo-buttons
+{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     gap: 1rem;
+}
+
+.user-profile-popup-editBook-storeInfo-buttons> button{
+    font-size: clamp(1.2rem, 1rem + 0.2vw, 3rem);
+    background-color:  var(--accent-1);
+    padding: 0.8rem;
+    width: 20%;
+    color: white;
+
+}
+
+.user-profile-popup-editBook-buttons
+{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    /*padding: 3.8rem 3.8rem 1rem  3.8rem;*/
+    gap: 1rem;
+    place-self: center;
+    width: 90%;
+    height: 80%;
+
+}
+
+.user-profile-popup-editBook-buttons > div
+{
+    display: flex;
+    gap: 1rem;
+}
+
+.user-profile-popup-editBook-buttons > div > button
+{
+    flex: 1;
+    text-transform: uppercase;
+}
+
+.user-profile-popup-editBook-buttons > div:first-child > button:nth-of-type(1)
+{
+    background-color: var(--accent-1);
+    color: white;
+}
+
+.user-profile-popup-editBook-buttons > div:first-child > button:nth-of-type(2)
+{
+    background-color: var(--accent-2);
+    color: white;
+}
+
+.user-profile-popup-editBook-buttons > div:last-child > button:nth-of-type(1)
+{
+    background-color: var(--alert);
+    color: white;
+}
+
+.user-profile-popup-editBook-buttons > div:last-child > button:nth-of-type(2)
+{
+    background-color: #769784;
+    color: white;
+}
+
+.user-profile-popup-editBook-buttons > div:last-child > button:nth-of-type(3)
+{
+    background-color: var(--secondary);
+    color: black;
+}

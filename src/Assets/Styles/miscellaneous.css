@@ -1,0 +1,103 @@
+.accent
+{
+    font-weight: 700;
+}
+
+.primary-clr
+{
+    background-color: var(--primary)!important;
+    color: white !important;
+}
+
+.secondary-clr
+{
+    background-color: var(--secondary) !important;
+    color: black !important;
+}
+
+.accent-clr
+{
+    background-color: var(--accent-1);
+    color: white;
+}
+
+.accent-clr-2
+{
+    background-color: var(--accent-2);
+    color: white;
+}
+
+.bg-work
+{
+    background-color: red !important;
+}
+
+.bgc-1
+{
+    background-color: var(--background) !important;
+    color: white !important;
+}
+
+.alert
+{
+    background-color: var(--alert) !important;
+    color: white !important;
+}
+
+.shade-1
+{
+    background-color: var(--shade-1) !important;
+    color: black !important;
+}
+
+.clean-input
+{
+    border: none;
+}
+
+.clean-input:focus
+{
+    outline: none;
+}
+
+.big-btn
+{
+    font-size: 2.5rem;
+    padding: 0.7em 1.5em;
+}
+
+.clickable
+{
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.clickable:hover
+{
+    opacity: 50%;
+}
+.clickable:active
+{
+    opacity: 100%;
+}
+
+.freeze
+{
+    pointer-events: none;
+    opacity: 85%;
+}
+
+.template-string-formatting
+{
+    white-space: pre-line;
+}
+
+.position-fixed
+{
+    position: fixed;
+}
+
+.hidden
+{
+    opacity: 0;
+}

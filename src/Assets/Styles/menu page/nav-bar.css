@@ -1,0 +1,53 @@
+.user-profile-nav
+{
+    background-color: var(--shade-1);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-self: start;
+}
+
+
+.user-profile-nav-header
+{
+    font-size: 2.6rem;
+    text-align: center;
+    padding: 1.2rem;
+}
+
+.user-profile-nav-items
+{
+    padding: 1rem;
+    margin-bottom: 10%;
+    font-size: calc(1rem + .6vw);
+}
+
+.user-profile-nav-item
+{
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.user-profile-nav-item:hover
+{
+    background-color: var(--shade-3);
+    transform: scale(103%);
+}
+
+.user-profile-nav-buttons
+{
+    display: flex;
+    justify-content: center;
+}
+
+.user-profile-nav-buttons > button
+{
+    background-color: var(--primary);
+    color: white;
+    width: 60%;
+    text-transform: uppercase;
+    font-weight: 500;
+}

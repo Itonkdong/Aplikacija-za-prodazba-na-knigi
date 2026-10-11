@@ -1,0 +1,336 @@
+.popular-books-section
+{
+    height: 100vh;
+    background-color: var(--background-2);
+    display: grid;
+    place-items: center;
+
+}
+
+.popular-books
+{
+    display: grid;
+    /*height: 80%;*/
+    width: 75%;
+    padding: 1rem;
+    grid-template-rows: 1fr 5fr 0.8fr;
+    gap: 1rem;
+    background-color: var(--background);
+    border-radius: 5px;
+}
+
+.popular-books-title
+{
+    font-size: clamp(1.5rem, 1rem + 2vw, 4rem);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popular-books-grid
+{
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    padding: 1rem;
+    border-radius: var(--br-sml);
+    gap: 2rem;
+}
+
+.book-card
+{
+    background-color: var(--shade-1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.7rem 2rem;
+    border-radius: 5px;
+    /*height: 105%;*/
+    color: black    ;
+    cursor: pointer;
+
+    /*Animating card*/
+
+    overflow: hidden;
+    transition: all 0.5s ease
+}
+
+.book-card:hover
+{
+    background-color: rgb(184, 196, 185);
+}
+
+.book-card:active
+{
+    transform: translateY(3px);
+}
+
+.book-card-img
+{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/0.9;
+    margin-bottom: 1rem;
+    border-radius: var(--br-sml);
+
+    position: relative;
+    overflow: hidden;
+
+}
+
+.book-card-img img
+{
+    height: 80%;
+    aspect-ratio: 1/1;
+    border-radius: 20px;
+}
+
+.book-card-tags
+{
+    position: absolute;
+    bottom: -30px;
+    left: 10%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.book-card:hover .book-card-tags
+{
+    bottom: 8%;
+    opacity: 1;
+}
+
+.book-card-tag
+{
+    padding: 0.7rem 1rem;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: clamp(1rem, 1rem + 0.07vw, 2rem);
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+
+.tag-new
+{
+    background-color: #43815d;
+}
+
+.tag-sale
+{
+    background-color: var(--alert);
+}
+
+.book-card-title
+{
+    font-size: clamp(1.5rem, 1rem + 0.65vw, 3rem);
+    font-weight: 800;
+    align-self: flex-start;
+
+    padding: 0.2em;
+    padding-top: 0;
+    line-height: 2.8rem;
+    min-height: 15%;
+    /*width: 100%;*/
+}
+
+.book-card-info
+{
+    align-self: flex-start;
+    font-size: clamp(1rem, 1rem + 0.3vw, 3rem);
+    padding: 0.3em;
+    font-weight: 500;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.book-card-author
+{
+    color: #6b5757;
+}
+
+.book-card-genre
+{
+    position: absolute;
+    top: 10%;
+    right: -60px;
+    background-color:  #43815d;
+    padding: 0.3rem 0.7rem;
+    border-radius: 5px;
+    font-size: clamp(1rem, 1rem + 0.1vw, 2rem);
+    transition: all 0.5s ease;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+    color: white;
+    opacity: 0;
+}
+
+.book-card:hover .book-card-genre
+{
+    right: 0;
+    top: 10%;
+    opacity: 1;
+}
+
+.book-by-animate
+{
+    display: inline-block;
+    transform: translateX(-3ch);
+    transition: all 0.5s ease;
+}
+
+.book-card:hover .book-by-animate
+{
+    transform: translateX(0ch);
+}
+
+
+.book-card-prices
+{
+    font-size: clamp(1.4rem, 1rem + 0.55vw, 3rem);
+    font-weight: 500;
+    /*margin-bottom: 2rem;*/
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+    gap: 0.2em;
+    color: black;
+    position: relative;
+    overflow: hidden;
+}
+
+.book-card-regular-price
+{
+    background-color: var(--shade-2);
+    color: black;
+    padding: 0.2em 1em;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+
+.book-card-old-price
+{
+    padding: 0.3em 1em;
+    opacity: 0.5;
+    color: black;
+    text-decoration: line-through;
+    transition: all 0.5s ease;
+}
+
+.sale-percentage
+{
+    position: absolute;
+    color: black;
+    padding: 0.3em 1em;
+    background-color: var(--shade-5);
+    border-radius: 5px;
+    text-align: center;
+    top: -30px;
+    left: 3%;
+    opacity: 0;
+    z-index: 1;
+    transition: all 0.5s ease;
+}
+
+.book-card:hover  .book-card-old-price
+{
+    opacity: 0;
+}
+
+.book-card:hover  .sale-percentage
+{
+    opacity: 1;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.book-card-button
+{
+    padding: 1em 2em;
+    font-size: clamp(1rem, 1rem + 0.15vw, 2rem);
+}
+.book-card-button:first-child
+{
+    width: 100%;
+}
+
+.book-card-buttons
+{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    transform: translateY(70px);
+    transition: all 0.5s ease;
+    opacity: 0;
+    width: 100%;
+
+}
+
+/*Animating card*/
+.content {
+    transition: transform 0.5s ease;
+}
+.book-card:hover .content {
+    transform: translateY(-10px); /* Adjust content position when buttons are shown */
+}
+
+.book-card:hover .book-card-buttons {
+    transform: translateY(-12px); /* New position when hovered */
+    opacity: 1;
+}
+
+.book-card:hover
+{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+}
+/**/
+
+.popular-books-nav
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popular-books-nav > nav
+{
+    display: flex;
+    gap: 1rem;
+}
+
+.popular-books-nav > nav > div
+{
+    font-size: clamp(1.2rem, 1rem + 0.4vw, 3rem);
+    padding: 0.4em 1em;
+    background-color: var(--primary);
+    border-radius: 45%;
+    color: white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.popular-books-nav > nav > div:nth-child(2)
+{
+    background-color: var(--accent-1);
+    border-radius: 5px;
+}
+
+.popular-books-nav-button:hover
+{
+    transform: scale(1.05);
+}
+
+.popular-books-nav-button:active
+{
+    transform: scale(1);
+}

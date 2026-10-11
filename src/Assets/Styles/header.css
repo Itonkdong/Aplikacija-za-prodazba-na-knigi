@@ -1,0 +1,135 @@
+.header
+{
+    background: var(--background);
+    background: -webkit-linear-gradient(to right, var(--background), var(--background-3));
+    background: linear-gradient(to right, var(--background), var(--background-3));
+    display: grid;
+    grid-template-columns: 0.5fr 4fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    align-content: center;
+    font-weight: 500;
+}
+
+.header-item
+{
+    font-size: 1.6rem;
+    padding: 0.7em 1em;
+}
+
+.header-logo
+{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-left: 30px;
+    flex: 0.5 0 auto;
+}
+
+.header-logo-img
+{
+    width: 80px;
+    border-radius: 10px;
+}
+
+.header-searchbar
+{
+    flex: 6 1;
+    display: flex;
+    align-items: center;
+
+}
+
+.header-searchbar input
+{
+    flex-grow: 5;
+
+    background-color: #577262;
+    height: 40px;
+    margin: 0;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border: 2px solid #567161;
+    color: white;
+    padding-left: 1.8rem;
+}
+.header-searchbar input:focus
+{
+    border: 2px solid #475d4f;
+    outline: none;
+}
+
+.header-searchbar input::placeholder
+{
+    color: #a69e9e;
+}
+
+.header-searchbar button
+{
+    flex-grow: 1;
+}
+
+.header-options
+{
+    display: flex;
+    gap: 30px;
+    border-radius: 2rem;
+    margin-right: 1rem;
+
+}
+
+.header-options-signedIn
+{
+    background-color: #6e9177;
+}
+
+.header-option-item
+{
+    cursor: pointer;
+    border-radius: 7px;
+    flex: 1;
+    display: grid;
+    place-items: center;
+    transition: all 0.2s ease;
+}
+
+.header-option-item:hover
+{
+    background-color: #567161;
+    border-radius: var(--br-sml);
+    transform: scale(105%);
+}
+
+.header-option-item:active
+{
+    transform: scale(102%);
+}
+
+.header-option-item-signIn
+{
+    background-color: var(--shade-3);
+    color: black;
+    border: none;
+    text-transform: uppercase;
+}
+
+.header-option-item-signIn:hover
+{
+    background-color: #acc2b4;
+}
+
+
+.header-option-item > img
+{
+    width: 38%;
+}
+
+.profile-icon-user > img
+{
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+

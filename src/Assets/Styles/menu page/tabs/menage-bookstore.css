@@ -1,0 +1,187 @@
+.user-profile-menageBookstore
+{
+    height: 100%;
+    /*background-color: red;*/
+    display: grid;
+    grid-template-rows: 18% 3fr 0.5fr;
+    align-content: center;
+    padding: 1rem;
+    position: relative;
+}
+
+.user-profile-menageBookstore-header
+{
+    background-color: var(--shade-2);
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.user-profile-menageBookstore-header> h3
+{
+    font-size: clamp(1.4rem, 1rem + 0.75vw, 3rem);
+    text-align: center;
+}
+
+.user-profile-menageBookstore-header-options
+{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    padding: 0 1rem;
+    /*background-color: lightblue;*/
+
+}
+
+.user-profile-menageBookstore-header-option > h6
+{
+    font-size: clamp(1rem, 1rem + 0.3vw, 2rem);
+}
+
+.user-profile-menageBookstore-header-option > *:not(h6)
+{
+    font-size: clamp(1rem, 1rem + 0.3vw, 2rem);
+    border-radius: 4px;
+    width: 80%;
+    padding: 0.3em 0.7em;
+}
+
+.user-profile-menageBookstore-header-option > select
+{
+    outline: none;
+    border: none;
+}
+
+.user-profile-menageBookstore-header-option:last-child
+{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.user-profile-menageBookstore-header-option:last-child > button
+{
+    width: 60%;
+    background-color: var(--accent-2);
+    color: white;
+}
+
+.user-profile-menageBookstore-items
+{
+    /*background-color: blue;*/
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.user-profile-menageBookstore-item
+{
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 2.5fr;
+    background-color: var(--shade-1);
+    border-radius: 5px;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.user-profile-menageBookstore-item:hover
+{
+    opacity: 85%;
+}
+
+.user-profile-menageBookstore-img
+{
+    display: grid;
+    place-items: center;
+}
+
+.user-profile-menageBookstore-img > img
+{
+    width: 50%;
+    aspect-ratio: 1/1;
+    border-radius: 4px;
+}
+
+.user-profile-menageBookstore-coverInfo
+{
+    align-self: center;
+}
+
+.user-profile-menageBookstore-coverInfo > h4
+{
+    font-size: clamp(1rem, 1rem + 0.3vw, 2rem);
+}
+
+.user-profile-menageBookstore-coverInfo > h5
+{
+    font-size:clamp(1rem, 1rem + 0.19vw, 2rem);
+    color: #bb9292;
+}
+
+.user-profile-menageBookstore-coverInfo > h6
+{
+    font-size:clamp(1rem, 1rem + 0.04vw, 2rem);
+    color: #281111;
+}
+
+.user-profile-menageBookstore-saleInfo
+{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-profile-menageBookstore-saleInfo > div
+{
+    font-size: clamp(1rem, 1rem + 0.18vw, 2rem);
+    background-color: var(--shade-3);
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+.user-profile-menageBookstore-footer
+{
+    background-color: var(--secondary);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.user-profile-menageBookstore-footer > nav
+{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.user-profile-menageBookstore-footer-link
+{
+    background-color: var(--accent-1);
+    color: white;
+    border-radius: 5px;
+    padding: 0.7em 1.2em;
+    cursor: pointer;
+    font-size: clamp(1.2rem, 1rem + 0.3vw, 2rem);
+    transition: all 0.2s ease;
+}
+
+.user-profile-menageBookstore-footer-link:hover
+{
+    background-color: var(--primary);
+    color: white;
+}
+
+.user-profile-menageBookstore-footer-activeLink
+{
+    background-color: var(--primary);
+    color: white;
+}

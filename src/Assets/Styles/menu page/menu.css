@@ -1,0 +1,54 @@
+/*Global*/
+@import "global.css";
+
+/*NavBar*/
+@import "nav-bar.css";
+
+
+
+/*Tabs*/
+/*-----------------------------------------------------------------------*/
+
+/*User Info*/
+@import "tabs/user-info.css";
+
+/*Saved Books*/
+@import "tabs/saved-books.css";
+
+/*Orders*/
+@import "tabs/orders.css";
+
+/*Menage Orders*/
+@import "tabs/menage-orders.css";
+
+/*Menage Bookstore*/
+@import "tabs/menage-bookstore.css";
+
+/*Menage Users*/
+@import "tabs/menage-users.css";
+
+
+
+
+/*Popups*/
+/*-----------------------------------------------------------------------*/
+
+/*Global*/
+@import "popups/global.css";
+
+/*Order Popup*/
+@import "popups/order.css";
+
+/*Edit Book Popup*/
+@import "popups/edit-book.css";
+
+/*Add Book Popup*/
+@import "popups/add-book.css";
+
+/*Menage Details Popup*/
+@import "popups/manage-details.css";
+
+/*Menage Reviews Popup*/
+@import "popups/manage-reviews.css";
+
+
