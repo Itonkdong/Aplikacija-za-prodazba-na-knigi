@@ -1,4 +1,4 @@
-# web-aplikacija-za-prodazba-na-knigi
+# luminaleaf
 
 ## Project setup
 ```
