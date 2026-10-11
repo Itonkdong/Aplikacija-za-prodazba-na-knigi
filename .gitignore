@@ -4,8 +4,23 @@ node_modules
 
 
 # local env files
+.env
+.env.*
+!.env.example
 .env.local
 .env.*.local
+
+# Firebase local files and private credentials
+.firebase/
+firebase-debug.log*
+firestore-debug.log*
+storage-debug.log*
+ui-debug.log*
+*-firebase-adminsdk-*.json
+*service-account*.json
+*serviceAccount*.json
+*.pem
+*.key
 
 # Log files
 npm-debug.log*
